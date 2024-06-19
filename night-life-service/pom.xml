@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mile</groupId>
-	<artifactId>noken-zivot</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
-	<name>noken-zivot</name>
+	<artifactId>nightlife</artifactId>
+	<version>0.0.5-SNAPSHOT</version>
+	<name>Night Life</name>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

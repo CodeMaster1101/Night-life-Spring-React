@@ -22,7 +22,7 @@ import java.security.GeneralSecurityException;
 import java.util.Arrays;
 
 @Service
-class GmailService {
+final class GmailService {
 
   @Value("${user-id}")
   private static String USER_ID;
@@ -52,5 +52,6 @@ class GmailService {
       throw new EmailFetchingException("something went wrong when authorizing", new RuntimeException());
     }
   }
+
 }
 

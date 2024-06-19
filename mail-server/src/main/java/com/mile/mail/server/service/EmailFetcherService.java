@@ -12,11 +12,11 @@ import java.util.List;
 import static com.mile.mail.server.service.GmailService.gmail;
 
 @Service
-public class EmailFetcherService {
+final class EmailFetcherService {
 
   private final EmailDelegatorService emailDelegatorService;
 
-  public EmailFetcherService(EmailDelegatorService emailDelegatorService) {
+  EmailFetcherService(EmailDelegatorService emailDelegatorService) {
     this.emailDelegatorService = emailDelegatorService;
   }
 
@@ -31,6 +31,7 @@ public class EmailFetcherService {
       throw new EmailFetchingException(e.getMessage(), e);
     }
   }
+
   private List<Message> getUnreadMails() throws IOException {
     ListMessagesResponse response = gmail.users().messages()
         .list("me")

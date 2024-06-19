@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-class EmailDelegatorService {
+final class EmailDelegatorService {
 
   @Value("${night-life-address}")
   private String nightLifeServerEndpoint;
